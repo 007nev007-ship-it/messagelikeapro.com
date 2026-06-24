@@ -76,7 +76,7 @@ header {
 }
 
 .logo img {
-  width: 90px;
+  width: 120px;
   flex-shrink: 0;
 }
 
@@ -172,8 +172,8 @@ p {
 }
 
 .hero-logo {
-  width: 250px;
-  margin: 0 auto 35px;
+  width: 300px;
+  margin: 0 auto 50px;
 }
 
 .hero-panel h3 {

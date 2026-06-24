@@ -522,4 +522,60 @@ footer a:hover {
   .app-card img {
     max-height: 480px;
   }
+}/* FIX UNEVEN RESEARCH/SYSTEM DESKTOP SECTIONS */
+
+.card-grid.five-card-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card-grid.five-card-grid .card {
+  padding: 28px;
+}
+
+.card-grid.five-card-grid h3 {
+  font-size: 1.05rem;
+}
+
+.card-grid.five-card-grid p {
+  font-size: 0.96rem;
+}
+
+/* IMAGE CARD CLEANUP */
+
+.card img,
+.page-card img {
+  max-height: 220px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+/* PROFESSIONAL 3-IMAGE ROW */
+
+.visual-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.visual-card {
+  background: rgba(255,255,255,0.96);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+}
+
+.visual-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 920px) {
+  .card-grid.five-card-grid,
+  .visual-card-grid {
+    grid-template-columns: 1fr;
+  }
 }

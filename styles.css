@@ -596,3 +596,15 @@ footer a:hover {
 .research-visual-card h3 {
   min-height: 44px;
 }
+/* FINAL OVERRIDE: MOVE WORLD MAP TEXT DOWN */
+
+.card img[src*="world-map"] {
+  height: 260px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  object-fit: contain !important;
+}
+
+.card img[src*="world-map"] + h3 {
+  margin-top: 135px !important;
+}

@@ -522,14 +522,25 @@ footer a:hover {
   .app-card img {
     max-height: 480px;
   }
-}/* FIX UNEVEN RESEARCH/SYSTEM DESKTOP SECTIONS */
+/* FIX UNEVEN RESEARCH/SYSTEM DESKTOP SECTIONS */
 
 .card-grid.five-card-grid {
-  grid-template-columns: repeat(5, 1fr);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 26px;
 }
 
 .card-grid.five-card-grid .card {
+  grid-column: span 2;
   padding: 28px;
+}
+
+.card-grid.five-card-grid .card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.card-grid.five-card-grid .card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 .card-grid.five-card-grid h3 {

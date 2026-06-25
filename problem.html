@@ -1,214 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>The Problem | Message Like A Pro</title>
 
-  <meta
-    name="description"
-    content="Communication problems in multilingual workplaces are not always language problems. They are often support, guidance, hierarchy, tone, and interpretation problems."
-  />
+  <meta name="description"
+    content="Communication problems in multilingual workplaces are not always language problems. They are often support, guidance, hierarchy, tone, and interpretation problems.">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="brand">
-        <img src="mlap-icon-512.png" alt="Message Like A Pro logo" class="brand-logo" />
-        <span>Message Like A Pro</span>
-      </a>
 
-      <nav class="nav">
-        <a href="problem.html">The Problem</a>
-        <a href="research.html">Research</a>
-        <a href="system.html">The System</a>
-        <a href="method.html">The Method</a>
-        <a href="book.html">Book</a>
-        <a href="app.html">App</a>
-        <a href="contact.html" class="nav-cta">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="container navbar">
 
-  <main>
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">The Problem</p>
-          <h1>Communication still fails, even when technology is available.</h1>
-          <p class="hero-text">
-            Multilingual workplaces often provide messaging platforms, email, translation tools, and digital systems. But technology alone does not provide communication clarity, judgement, support, or effective outcomes.
-          </p>
-        </div>
-
-        <div class="page-hero-card">
-          <p class="card-label">Core Insight</p>
-          <h2>Communication problems are not always language problems.</h2>
-          <p>
-            They are often problems of ambiguity, hierarchy, tone, interpretation, expectation, timing, and missing communication support.
-          </p>
-        </div>
+    <a href="index.html" class="logo">
+      <img src="images/mlap-logo.png" alt="MLAP Logo">
+      <div class="logo-text">
+        <h1>Message Like A Pro</h1>
+        <p>Communication Support System</p>
       </div>
-    </section>
+    </a>
 
-    <section class="page-section research">
-      <div class="container quote-card">
-        <blockquote>
-          “Simply having access to ICT has not nor does not guarantee improved communication.”
-        </blockquote>
-        <cite>Research insight from the MLAP thesis audit</cite>
-      </div>
-    </section>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <section class="page-section">
-      <div class="container narrow">
-        <p class="eyebrow">Why It Happens</p>
-        <h2>Messages move quickly. Meaning does not always move with them.</h2>
-        <p>
-          Digital communication can make messages faster, easier, and more accessible. But speed does not guarantee understanding. In multilingual workplaces, a message may be grammatically correct and still fail professionally.
-        </p>
+    <label for="menu-toggle" class="menu-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <strong>Menu</strong>
+    </label>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+
+    <nav class="side-menu">
+      <div class="side-menu-header">
+        <h2>Explore MLAP</h2>
+        <label for="menu-toggle" class="menu-close">×</label>
       </div>
 
-      <div class="container page-grid">
-        <div class="page-card">
-          <h3>Hierarchy</h3>
-          <p>Power distance can affect how questions, concerns, disagreement, and clarification are interpreted.</p>
-        </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="problem.html" class="active">Problem</a></li>
+        <li><a href="method.html">Method</a></li>
+        <li><a href="system.html">System</a></li>
+        <li><a href="ecosystem.html">Ecosystem</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="support-gap.html">Support Gap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <div class="page-card">
-          <h3>Ambiguity</h3>
-          <p>Unclear expectations, incomplete instructions, and indirect messages can create uncertainty.</p>
-        </div>
+  </div>
+</header>
 
-        <div class="page-card">
-          <h3>Tone</h3>
-          <p>Short written messages may sound rude, cold, defensive, impatient, or unclear without emotional context.</p>
-        </div>
+<main>
 
-        <div class="page-card">
-          <h3>Culture</h3>
-          <p>Different communication norms influence directness, politeness, timing, disagreement, and professional boundaries.</p>
-        </div>
+<section class="hero">
+  <div class="container hero-grid">
 
-        <div class="page-card">
-          <h3>Pressure</h3>
-          <p>People often communicate too quickly when they feel stressed, frustrated, confused, or professionally exposed.</p>
-        </div>
+    <div>
+      <p style="font-weight:800; letter-spacing:0.18em; color:#b9873b;">
+        THE PROBLEM
+      </p>
 
-        <div class="page-card">
-          <h3>Support</h3>
-          <p>Many professionals are expected to communicate effectively without guidance, examples, frameworks, or training.</p>
-        </div>
-      </div>
-    </section>
+      <h1>
+        Communication still fails, even when technology is available.
+      </h1>
 
-    <section class="page-section system">
-      <div class="container narrow">
-        <p class="eyebrow">The Modern Workplace Paradox</p>
-        <h2>More communication tools do not automatically create better communication.</h2>
-        <p>
-          Organisations may provide LINE groups, email systems, translation tools, messaging platforms, shared drives, and collaboration apps. Yet people may still feel uncertain about what to say, how to say it, when to say it, and how the message may be interpreted.
-        </p>
-      </div>
+      <p>
+        Multilingual workplaces often provide messaging platforms, email,
+        translation tools, and digital systems. But technology alone does
+        not provide communication clarity, judgement, support, or effective
+        outcomes.
+      </p>
 
-      <div class="container two-grid">
-        <div class="page-card">
-          <h3>Technology can improve</h3>
-          <ul class="page-list">
-            <li>message delivery</li>
-            <li>speed</li>
-            <li>access</li>
-            <li>documentation</li>
-            <li>convenience</li>
-          </ul>
-        </div>
+      <div class="hero-buttons">
+        <a href="support-gap.html" class="button button-primary">
+          Explore The Support Gap
+        </a>
 
-        <div class="page-card">
-          <h3>Technology does not automatically provide</h3>
-          <ul class="page-list">
-            <li>clarity</li>
-            <li>interpretation</li>
-            <li>cultural understanding</li>
-            <li>professional judgement</li>
-            <li>communication effectiveness</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container quote-card">
-        <blockquote>
-          “Digital tools such as LINE Messenger and Google Translate were already adopted in many schools as informal but essential communication tools, this was not enough to enhance administrator-teacher interactions, and regular communication breakdowns continued to prevail.”
-        </blockquote>
-        <cite>Research insight from the MLAP thesis audit</cite>
-      </div>
-    </section>
-
-    <section class="page-section flagship">
-      <div class="container flagship-grid">
-        <div>
-          <p class="eyebrow">The MLAP Response</p>
-          <h2>The problem is not only communication technology. The problem is communication support.</h2>
-          <p>
-            Message Like A Pro exists because multilingual workplaces often provide the tools for sending messages, but not the support needed to make communication effective.
-          </p>
-          <a href="support-gap.html" class="button primary">Explore The Support Gap</a>
-        </div>
-
-        <div class="flagship-panel">
-          <h3>MLAP focuses on:</h3>
-          <ul>
-            <li>communication guidance</li>
-            <li>professional tone</li>
-            <li>message structure</li>
-            <li>risk awareness</li>
-            <li>clarification</li>
-            <li>communication outcomes</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact">
-      <div class="container contact-card">
-        <p class="eyebrow">Next</p>
-        <h2>See how the research explains the problem.</h2>
-        <p>
-          The original research investigated ICT-mediated communication, but the findings revealed a wider issue involving communication support, effectiveness, and outcomes.
-        </p>
-        <a href="research.html" class="button primary">Read The Research</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Message Like A Pro</strong>
-        <p>Research-Informed Communication Support</p>
-      </div>
-
-      <div>
-        <span>System</span>
-        <a href="problem.html">The Problem</a>
-        <a href="research.html">Research</a>
-        <a href="system.html">The System</a>
-        <a href="method.html">The Method</a>
-      </div>
-
-      <div>
-        <span>Products</span>
-        <a href="book.html">Flagship Book</a>
-        <a href="app.html">MLAP App</a>
-        <a href="ecosystem.html">Future Ecosystem</a>
-        <a href="contact.html">Contact</a>
+        <a href="research.html" class="button button-secondary">
+          Read The Research
+        </a>
       </div>
     </div>
-  </footer>
+
+    <div class="hero-panel">
+      <img src="images/mlap-logo.png"
+           alt="Message Like A Pro"
+           class="hero-logo">
+
+      <h3>Communication problems are not always language problems.</h3>
+
+      <p>
+        They are often problems of ambiguity, hierarchy, tone,
+        interpretation, expectation, timing, and missing communication
+        support.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="authority">
+      <h2>
+        Messages move quickly. Meaning does not always move with them.
+      </h2>
+
+      <p>
+        Digital communication can make messages faster, easier, and more
+        accessible. But speed does not guarantee understanding.
+      </p>
+
+      <br>
+
+      <p>
+        In multilingual workplaces, a message may be grammatically correct
+        and still fail professionally.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Why Communication Breaks Down</h2>
+
+      <p>
+        Workplace communication problems often involve context, expectation,
+        hierarchy, tone, timing, and confidence.
+      </p>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Hierarchy</h3>
+        <p>
+          Power distance can affect how questions, concerns, disagreement,
+          and clarification are interpreted.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ambiguity</h3>
+        <p>
+          Unclear expectations, incomplete instructions, and indirect
+          messages can create uncertainty.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Tone</h3>
+        <p>
+          Short written messages may sound rude, cold, defensive, impatient,
+          or unclear without emotional context.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Culture</h3>
+        <p>
+          Different communication norms influence directness, politeness,
+          timing, disagreement, and professional boundaries.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pressure</h3>
+        <p>
+          People often communicate too quickly when they feel stressed,
+          frustrated, confused, or professionally exposed.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Support</h3>
+        <p>
+          Many professionals are expected to communicate effectively without
+          guidance, examples, frameworks, or training.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>The Modern Workplace Paradox</h2>
+
+      <p>
+        More communication tools do not automatically create better
+        communication.
+      </p>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Technology Can Improve</h3>
+        <p>
+          Message delivery, speed, access, documentation, convenience, and
+          visibility.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Technology Does Not Automatically Provide</h3>
+        <p>
+          Clarity, interpretation, cultural understanding, professional
+          judgement, or communication effectiveness.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>The Missing Layer</h3>
+        <p>
+          People may still feel uncertain about what to say, how to say it,
+          when to say it, and how the message may be interpreted.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="cta">
+      <h2>
+        The problem is not only communication technology.<br>
+        The problem is communication support.
+      </h2>
+
+      <p>
+        Message Like A Pro exists because multilingual workplaces often
+        provide the tools for sending messages, but not the support needed
+        to make communication effective.
+      </p>
+
+      <div class="hero-buttons centered-buttons">
+        <a href="support-gap.html" class="button button-secondary">
+          Explore The Support Gap
+        </a>
+
+        <a href="method.html" class="button button-secondary">
+          Explore The Method
+        </a>
+
+        <a href="system.html" class="button button-secondary">
+          Explore The System
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+
+  <div class="container footer-grid">
+
+    <div>
+      <h3>Message Like A Pro</h3>
+
+      <p>
+        A research-informed communication support system for
+        multilingual workplaces.
+      </p>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <p><a href="problem.html">The Problem</a></p>
+      <p><a href="method.html">Method</a></p>
+      <p><a href="system.html">System</a></p>
+      <p><a href="ecosystem.html">Ecosystem</a></p>
+      <p><a href="products.html">Products</a></p>
+      <p><a href="research.html">Research</a></p>
+      <p><a href="support-gap.html">Support Gap</a></p>
+    </div>
+
+    <div>
+      <h3>Support</h3>
+      <p><a href="faq.html">FAQ</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="contact.html">Contact</a></p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href="terms.html">Terms</a></p>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© Message Like A Pro. All rights reserved.</p>
+  </div>
+
+</footer>
+
 </body>
 </html>

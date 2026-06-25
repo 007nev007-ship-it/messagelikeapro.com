@@ -579,3 +579,23 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================
+   RESEARCH PAGE IMAGE ALIGNMENT
+   ========================================== */
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* Make the world map sit lower so all headings align */
+
+.card img[src*="world-map"] {
+    height: 180px;
+    margin-top: 55px;
+    margin-bottom: 85px;
+}

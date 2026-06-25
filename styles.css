@@ -607,4 +607,46 @@ footer a:hover {
   .app-card img {
     max-height: 480px;
   }
+}/* SUPPORT MODEL */
+
+.support-grid .card:nth-child(4) {
+  transform: translateX(calc(50% + 13px));
+}
+
+.support-grid .card:nth-child(5) {
+  transform: translateX(calc(50% + 13px));
+}
+
+.support-grid .card:nth-child(4):hover,
+.support-grid .card:nth-child(5):hover {
+  transform: translateX(calc(50% + 13px)) translateY(-3px);
+}
+
+/* METHOD SECTION */
+
+.method-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* TEMPLATE FRAMEWORK */
+
+.framework-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+
+  .framework-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .support-grid .card:nth-child(4),
+  .support-grid .card:nth-child(5),
+  .support-grid .card:nth-child(4):hover,
+  .support-grid .card:nth-child(5):hover {
+    transform: none;
+  }
 }

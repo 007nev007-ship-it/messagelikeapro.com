@@ -796,3 +796,183 @@ footer a:hover {
     max-height: 480px;
   }
 }
+
+/* FINAL MOBILE POLISH FOR APP + PRODUCTS PAGES
+   This section protects the premium desktop layout while forcing all large
+   dark product/app showcase panels to stack cleanly on phones. */
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: min(100% - 32px, var(--max));
+  }
+
+  section {
+    padding: 58px 0;
+  }
+
+  section[style*="background:#07110f"],
+  section[style*="background: #07110f"] {
+    padding: 58px 0 !important;
+  }
+
+  .hero {
+    padding: 58px 0 46px;
+  }
+
+  .hero-grid {
+    gap: 32px;
+  }
+
+  .hero h1,
+  h1 {
+    font-size: clamp(2.15rem, 11vw, 3.2rem);
+    line-height: 1.02;
+  }
+
+  .hero p,
+  .section-title p,
+  .authority p,
+  .cta p {
+    font-size: 1rem;
+  }
+
+  .hero-panel {
+    padding: 22px;
+    border-radius: 26px;
+  }
+
+  .hero-panel img,
+  .hero-panel .hero-logo,
+  img.hero-logo {
+    max-width: 260px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .section-title {
+    margin-bottom: 34px;
+  }
+
+  .section-title h2,
+  .authority h2,
+  .cta h2 {
+    font-size: clamp(2rem, 9vw, 3.15rem);
+    line-height: 1.05;
+  }
+
+  .authority,
+  .cta {
+    border-radius: 28px;
+    padding: 34px 22px;
+  }
+
+  .hero-buttons,
+  .centered-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Collapse all inline desktop showcase grids used on app.html and products.html. */
+  section[style*="background:#07110f"] div[style*="grid-template-columns"],
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 22px !important;
+    border-radius: 26px !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] > img,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] > img,
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] img,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] img {
+    max-width: min(100%, 270px) !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    display: block !important;
+    border-radius: 22px !important;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] h3,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] h3 {
+    font-size: clamp(1.65rem, 8vw, 2.35rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] p,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] p {
+    font-size: 1rem !important;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] p[style*="letter-spacing"],
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] p[style*="letter-spacing"] {
+    font-size: 0.78rem !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Keep alternating desktop rows readable on mobile by making text/image order natural. */
+  section[style*="background:#07110f"] div[style*="grid-template-columns:1fr"] > img,
+  section[style*="background: #07110f"] div[style*="grid-template-columns:1fr"] > img {
+    order: -1;
+  }
+
+  .card-grid {
+    gap: 22px;
+  }
+
+  .card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .footer-grid {
+    gap: 26px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 24px, var(--max));
+  }
+
+  .logo-text h1 {
+    font-size: 0.82rem;
+  }
+
+  .logo-text p {
+    display: none;
+  }
+
+  .hero h1,
+  h1 {
+    font-size: 2.05rem;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"],
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] {
+    padding: 18px !important;
+    border-radius: 22px !important;
+  }
+
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] > img,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] > img,
+  section[style*="background:#07110f"] div[style*="grid-template-columns"] img,
+  section[style*="background: #07110f"] div[style*="grid-template-columns"] img {
+    max-width: min(100%, 230px) !important;
+  }
+}

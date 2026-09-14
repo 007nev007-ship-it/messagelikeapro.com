@@ -976,3 +976,76 @@ footer a:hover {
     max-width: min(100%, 230px) !important;
   }
 }
+
+/* Sales-readiness repairs: preserve the existing palette and page layouts. */
+img { height: auto; }
+.logo-text .brand-name {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: var(--green);
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  margin: 0;
+}
+.logo { margin-right: auto; }
+.navbar { gap: 16px; }
+.shop-link { color: var(--green); font-weight: 800; padding: 12px 4px; white-space: nowrap; }
+.site-menu { position: relative; flex-shrink: 0; }
+.site-menu summary { list-style: none; }
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu summary::after { content: '+'; font-size: 1.25rem; }
+.site-menu[open] summary::after { content: '−'; }
+.site-menu .side-menu {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  height: auto;
+  max-height: 75vh;
+  max-height: 75dvh;
+  transform: none;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+}
+.site-menu:not([open]) .side-menu { display: none; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid #876019;
+  outline-offset: 5px;
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2000;
+  padding: 12px 18px;
+  background: white;
+  color: var(--green);
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+section[id], main[id] { scroll-margin-top: 110px; }
+.card p a { text-decoration: underline; text-underline-offset: 3px; }
+.book-choices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.choice-card { display: flex; flex-direction: column; gap: 12px; }
+.choice-card span { margin-top: auto; padding-top: 12px; font-weight: 800; color: var(--green); }
+.hero-grid > *, .footer-grid > * { min-width: 0; }
+/* Do not inject the same additional marketing sentence into every statement. */
+.authority h2::after { content: none; }
+@media (max-width: 920px) {
+  .book-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .logo-text .brand-name { font-size: 1rem; }
+}
+@media (max-width: 600px) {
+  .navbar { flex-wrap: wrap; gap: 8px 12px; padding: 12px 0; }
+  .logo { flex: 1 1 calc(100% - 90px); }
+  .shop-link { order: 3; flex-basis: 100%; text-align: center; padding: 4px; }
+  .book-choices { grid-template-columns: 1fr; }
+  .logo-text .brand-name { font-size: 0.9rem; display: block; }
+  .logo-text p:not(.brand-name) { display: none; }
+  .site-menu .side-menu { width: min(88vw, 360px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+/* Improve the small gold hero label contrast on the light background. */
+.hero p[style*="color:#b9873b"] { color: #876019 !important; }

@@ -1,31 +1,29 @@
-# Continue the existing Message Like A Pro implementation
+# Message Like A Pro — verified post-deployment handover
 
-Repository: https://github.com/007nev007-ship-it/messagelikeapro.com
-Branch: website/sales-readiness
-Original baseline: 40371c9e9dfeb6f8e1418f8f9d2f2b9e16b834bb
-Implementation commit: 1cf21ea
+Do not restart the audit, bundle recovery, upload, hash verification or deployment.
 
-Do not restart the audit or reconstruct the changes. The accompanying Git bundle contains the existing branch changes, including optimised assets, audit and validation script. It requires the original baseline, available in the existing repository.
+## Completed state
 
-## Confirmed continuation state
+PR #1 was merged to main at d045ad07ef7b69172a022dc06571f95067373871 and deployed successfully. The two subsequent live issues were fixed in main commit 6f69ee53a2647560244b08d55bd796fa55b8eb20: all customer pages use styles.css?v=20260914-1 and both homepage “Browse all six books” links lead to products.html. GitHub Pages run 34909832308 completed successfully on 14 September 2026.
 
-GitHub is installed and enabled, and the user explicitly confirmed repository authorisation. The current conversation nevertheless exposes no GitHub repository tools. A fresh terminal push failed with `could not read Username for https://github.com`. This is a missing session capability/credential path, not evidence that the user failed to authorise the repository. Do not ask the user to install GitHub again or request credentials in chat.
+The original bundle commits remain historical recovery references, not outstanding work. GitHub connector writes work; terminal credentials are unnecessary. User authorised publication. Never request credentials in chat.
 
-The existing implementation is intact. Static checks pass for 15 pages and 17 Gumroad links. No substantive implementation was restarted. The branch has not been pushed or deployed.
+## Live verification completed
 
-Browser inspection of the live domain was previously rejected by the browser permission check. GitHub authorisation alone does not resolve that separate restriction. Do not work around the rejection.
+- Live homepage loads the versioned stylesheet; logo proportions and header render correctly. Both catalogue links have the correct destination; the lower button was clicked successfully.
+- Desktop homepage and catalogue have no horizontal overflow. Homepage images loaded.
+- Live responsive fixture checked at 390 px and 320 px: homepage/catalogue geometry fits; book and FAQ headings, text and purchase controls visually fit both frames. These are CSS viewport checks, not physical-device or Safari tests.
+- Mobile menu opens and closes using Enter and exposes the expected navigation links.
+- Live catalogue collection link and flagship PDF link preserve campaign labels and reach the correct Gumroad listings.
+- Collection and flagship checkout URLs advertised by Gumroad reach payment forms with the correct products and totals: US$99.99 and US$49.99 respectively, quantity one and no tip. The collection's initial automated button click did not navigate; directly opening its observed checkout href worked. Do not describe this as a fully verified click interaction on every browser.
+- No purchase, payment details or personal details were submitted. Receipt and PDF delivery remain untested. No paid transaction is authorised under the zero additional-budget constraint.
 
-## Agent recovery from the incremental bundle
+## Resume here: sales baseline
 
-In an authorised GitHub-capable session, clone/fetch the existing repository, inspect its latest main and any AGENTS.md instructions, then import the bundle. Example, from the repository root, replacing the placeholder with the actual attached bundle path:
+Gumroad reporting is not authenticated in the working browser. Secure sign-in is the next access dependency. Obtain the actual reporting period, timezone, product views, orders, gross/net revenue and available referral breakdown before calculating results. Missing data is unknown, not zero. Do not claim website visitor measurement or campaign attribution simply because UTM labels exist.
 
-```sh
-git bundle verify /absolute/path/mlap-sales-readiness.bundle
-git fetch /absolute/path/mlap-sales-readiness.bundle website/sales-readiness:website/sales-readiness
-git switch website/sales-readiness
-python scripts/check_site.py
-```
+After access: record a dated baseline, inspect available referral reporting, then prepare one small organic traffic experiment for an authorised channel. Record its URL, audience, date, reach where available and attributable sales. Do not send promotions without explicit channel/recipient authorisation. Do not buy advertising, services or test products. No recurring automation is running.
 
-Compare against current remote main and reconcile any intervening changes before publishing the review branch. No force push. Review docs/WEBSITE_AUDIT.md for completed work, remaining verification and commercial constraints. A draft pull request is authorised; consequential live publication still requires appropriate approval after concrete review and checks.
+Author credentials and research-source additions need supporting evidence; do not invent or imply completed research. Preserve British English, the existing brand/products/infrastructure and zero additional budget.
 
-Remaining work: browser desktop/mobile and checkout verification when permission is available; current Gumroad price and bundle-discount verification; actual reporting capability/baseline; source-backed credibility details and factual policy updates if necessary. Preserve the existing zero budget, British English, products, brand and working infrastructure. Do not begin large-scale promotion before readiness is established.
+This handover is committed on website/sales-readiness separately from main to avoid an unnecessary website deployment for documentation only. The live code remains main 6f69ee5. Earlier WEBSITE_AUDIT.md is historical; its deployment blockers are superseded by this record.

@@ -36,10 +36,10 @@ The bundle checkout reached its payment form and showed the correct bundle. No p
 - Added purchase guidance to the existing terms page, directing buyers to the product listing and final checkout total.
 - Static checks for 15 pages and 17 Gumroad links continue to pass.
 
-## Remaining work
+## Post-deployment verification
 
-- Confirm deployment and browser navigation on the released revision.
-- Desktop and mobile visual checks remain outstanding. The browser could visit the live website but blocked the local preview address.
-- Gumroad dashboard reporting and sales baseline remain unverified. Do not infer zero sales or calculate conversion rates without the necessary data. Campaign tags alone do not collect visits, clicks or sales.
-- Author credentials and research-source additions require supporting material; do not manufacture these or imply that unfinished research validates the products.
-- No promotional messages have been sent. Organic promotion follows readiness and requires an authorised channel. No recurring automation is running.
+See CONTINUATION.md for the completed live checks and exact deployed revision. Both reported live defects are fixed and deployed. Desktop and 320/390 px CSS viewport checks are complete, with physical-device testing and paid fulfilment outside the checks performed. Collection and flagship payment forms show the correct products and USD totals. No payment was submitted.
+
+## Remaining commercial work
+
+Authenticated Gumroad reporting baseline, source-backed credibility details and an authorised organic promotion channel remain outstanding. No visitor totals, conversion rates or sales have been inferred. No promotional messages or recurring automation have been started.
